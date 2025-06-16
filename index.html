@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+  <div class="container">
+    <h1>Tic Tac Toe</h1>
+
+    <div class="controls">
+      <label>Mode:
+        <select id="modeSelect">
+          <option value="human">2 Player</option>
+          <option value="ai">Play vs AI</option>
+        </select>
+      </label>
+      <label>Grid:
+        <select id="gridSelect">
+          <option value="3">3x3</option>
+          <option value="4" selected>4x4</option>
+          <option value="5">5x5</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="scoreboard">
+      <span id="scoreX">X: 0</span>
+      <span id="scoreO">O: 0</span>
+    </div>
+
+    <div class="status" id="status">Player X's turn</div>
+
+    <div class="board" id="board"></div>
+
+    <button onclick="resetGame()">Restart Game</button>
+  </div>
+
+  <audio id="popSound" src="https://cdn.pixabay.com/download/audio/2022/10/04/audio_c210cb450a.mp3?filename=interface-124464.mp3"></audio>
+  <audio id="winSound" src="https://cdn.pixabay.com/download/audio/2022/10/26/audio_f73c4060aa.mp3?filename=success-1-6297.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
